@@ -1,17 +1,3 @@
-#include <stdio.h>
- 
-int main() {
-    int segundos;
-   
-    for (segundos = 10; segundos >= 0; segundos--) {
-        printf("%d\n", segundos);
-       
-        // Loop aninhado para simular um atraso
-        for (int i = 0; i < 100000000; i++) {
-            // Apenas para simular um atraso
-        }
-    }
- 
 #include<stdio.h>
 
 int main() {
@@ -28,6 +14,8 @@ int main() {
         i++;
     }
 
+    printf("\n");
+
     // Implementação de Movimentação do Bispo usando do-while
     int j = 1;
     do {
@@ -35,25 +23,26 @@ int main() {
         j++;
     } while (j <= bispoCasas);
 
+    printf("\n");
 
     // Implementação de Movimentação da Rainha
     for (int i = 1; i <= rainhaCasas; i++) {
         printf("Rainha moveu %d casa(s) para a esquerda.\n", i);
     }
 
-    return 0;
-}
-    for (int i = 1; i <= 10; i++)
-    {
-        printf("Fogos de artifício!\n");
+    printf("\n");
+
+    // Implementação de Movimentação do Cavalo
+    int m = 1;
+    for (int k = 1; k <= 2; k++) {
+        printf("Cavalo moveu %d casa(s) para baixo.\n", k);
+        while (m <= 1) {
+            printf("Cavalo moveu %d casa(s) para a esquerda.\n", m);
+            m++;
+        }
     }
 
     printf("\n");
-    
-    for (int j = 1; j <=10; j++)
-    {
-        printf("Feliz Ano Novo!\n");
-    }
 
     return 0;
 }
