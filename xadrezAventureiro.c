@@ -10,7 +10,7 @@ int main() {
     // Implementação de Movimentação da Torre usando while
     int i = 1;
     while (i <= torreCasas) {
-        printf("Torre moveu %d casa(s) para a direita.\n", i);
+        printf("Torre se moveu para a direita.\n");
         i++;
     }
 
@@ -19,7 +19,7 @@ int main() {
     // Implementação de Movimentação do Bispo usando do-while
     int j = 1;
     do {
-        printf("Bispo moveu %d casa(s) em diagonal.\n", j);
+        printf("Bispo se moveu em diagonal.\n");
         j++;
     } while (j <= bispoCasas);
 
@@ -27,20 +27,26 @@ int main() {
 
     // Implementação de Movimentação da Rainha
     for (int i = 1; i <= rainhaCasas; i++) {
-        printf("Rainha moveu %d casa(s) para a esquerda.\n", i);
+        printf("Rainha se moveu para a esquerda.\n");
     }
 
     printf("\n");
 
+    printf("(O cavalo se moveu assim: ");
+
     // Implementação de Movimentação do Cavalo
-    int m = 1;
-    for (int k = 1; k <= 2; k++) {
-        printf("Cavalo moveu %d casa(s) para baixo.\n", k);
-        while (m <= 1) {
-            printf("Cavalo moveu %d casa(s) para a esquerda.\n", m);
-            m++;
+    for (int i = 1; i <= 2; i++) { // O cavalo se move duas vezes para baixo
+        printf("Baixo ");
+        if (i == 2) { // Se for a segunda iteração, o cavalo se move para a esquerda
+            int k = 1;
+            while (k <= 1) {
+                printf("Esquerda");
+                k++;
+            }
         }
     }
+
+    printf(")");
 
     printf("\n");
 
