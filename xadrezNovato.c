@@ -3,9 +3,9 @@
 int main() {
     // Nível Novato - Movimentação das Peças
     // Definindo constantes para o número de casas que cada peça pode se mover
-    const int torreCasas = 5;
-    const int bispoCasas = 5;
-    const int rainhaCasas = 8;
+    int torreCasas = 5;
+    int bispoCasas = 5;
+    int rainhaCasas = 8;
     
     // Implementação de Movimentação da Torre usando while
     int i = 1;
